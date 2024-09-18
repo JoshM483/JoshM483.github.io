@@ -1,9 +1,18 @@
+# main links
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+  - title: "Home"
+    description: "About me and my transition to become a developer"
+    url: /
+  - title: "Resume"
+    description: "My history and experiences"
+    url: /resume/
+  - title: "Projects"
+    description: "So many ideas, so little time..."
+    url: /projects/
+  - title: "Articles"
+    description: "My open notebook for the internet to peruse..."
+    url: /articles/
+  - title: "Contact"
+    description: "let's connect"
+    url: /contact/
+
