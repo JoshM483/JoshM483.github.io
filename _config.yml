@@ -38,6 +38,11 @@ author:
     email: michaelsjoshua@gmail.com
 
 
+# For project 'cards'
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 
 include:

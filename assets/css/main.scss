@@ -1,0 +1,71 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    max-width: 1080;
+    margin: 5 auto;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    height: 300px, 1fr;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-tech i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card-content {
+    /*max-height: 200px;*/
+    overflow: hidden;
+}
+
+.project-card-links {
+    display: flex;
+    gap: 10px;    
+}
+
+/* media query, switch to single row on small screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
