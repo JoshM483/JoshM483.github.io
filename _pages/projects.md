@@ -39,7 +39,7 @@ Cards include:
                 {% elsif tech == "Docker" %}
                     <i class="fab fa-docker" style="color: #2496ED;"></i> Docker
                 {% elsif tech == "GitHub" %}
-                    <i class="fab fa-github" style="color: #181717;"></i> GitHub
+                    <img src="/assets/images/icons/icons8-github.png" alt="Github Icon" style="width:24px; height:24px;"/> GitHub
                 {% elsif tech == "SQL" %}
                     <i class="fas fa-database" style="color: #4479A1;"></i> SQL
                 {% elsif tech == "Visual Studio" %}
@@ -52,7 +52,7 @@ Cards include:
                     <i class="fas fa-robot" style="color: #A0AABF;"></i> OpenAI
                 {% else %}
                     <!-- For unknown techs, assume an image will be sourced -->
-                    <img src="/assets/images/icon/test.png" alt="{{ tech }}" style="width:24px; height:24px;"/> {{ tech }}
+                    <img src="/assets/images/icons/test.png" alt="{{ tech }}" style="width:24px; height:24px;"/> {{ tech }}
                 {% endif %}
             {% endfor %}
         </div>
